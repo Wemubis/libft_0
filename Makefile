@@ -51,7 +51,7 @@ LIST = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 		ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c \
 		ft_lstsize.c \
 
-############# SRCS + DIR #############
+############ DIRS + SRCS #############
 SRCS_CHAR = $(addprefix $(DIR_CHAR), $(CHAR))
 SRCS_CONV_PUT = $(addprefix $(DIR_CONV_PUT), $(CONV_PUT))
 SRCS_MEM = 	$(addprefix $(DIR_MEM), $(MEM))
