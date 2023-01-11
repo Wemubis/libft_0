@@ -33,6 +33,14 @@ int		ft_putnbr_unsigned_printf(unsigned int n);
 int		ft_ptr_b_printf(void *n, char *base);
 int		ft_putstr_printf(char *s);
 
+/*-----------------GNL----------------*/
+char	*get_next_line(int fd);
+size_t	ft_strlen(char *str);
+char	*ft_strdup(char *s);
+char	*ft_strchr(char *s, int c);
+char	*ft_strjoin(char *s1, char *s2);
+char	*keep_left(char *s);
+
 /*----------------CHAR----------------*/
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
