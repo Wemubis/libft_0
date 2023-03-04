@@ -13,15 +13,16 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// #ifndef BUFFER_SIZE
-// # define BUFFER_SIZE 256
-// #endif
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 256
+#endif
 
 /*-------------------------HEAD-------------------------*/
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
 # include <stdarg.h>
+# include <limits.h>
 
 /*-------------------------FCTN-------------------------*/
 
@@ -35,10 +36,10 @@ int		ft_putstr_printf(char *s);
 
 /*-----------------GNL----------------*/
 char	*get_next_line(int fd);
-size_t	ft_strlen(char *str);
-char	*ft_strdup(char *s);
-char	*ft_strchr(char *s, int c);
-char	*ft_strjoin(char *s1, char *s2);
+size_t	gnl_strlen(char *str);
+char	*gnl_strdup(char *s);
+char	*gnl_strchr(char *s, int c);
+char	*gnl_strjoin(char *s1, char *s2);
 char	*keep_left(char *s);
 
 /*----------------CHAR----------------*/
@@ -60,9 +61,11 @@ void	*ft_memset(void *b, int c, size_t len);
 /*---------------STRING---------------*/
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+char	ft_find_char(const char *s, int c);
 char	**ft_split(char const *s, char c);
 char	*ft_strcat(char *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strdup(const char *s);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);
